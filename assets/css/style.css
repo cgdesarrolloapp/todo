@@ -1,0 +1,276 @@
+@font-face {font-family:"Lato Bold";src:url("/todo/assets/fonts/Lato-Bold.eot?") format("eot"),url("/todo/assets/fonts/Lato-Bold.woff") format("woff"),url("/todo/assets/fonts/Lato-Bold.ttf") format("truetype"),url("/todo/assets/fonts/Lato-Bold.svg#Lato-Bold") format("svg");font-weight:normal;font-style:normal;}
+
+
+body {
+  margin: 0;
+  min-width: 250px;
+}
+h1,h2,h3,h4,h5, input{
+font-family:"Lato Bold";
+}
+
+
+/* Include the padding and border in an element's total width and height */
+* {
+  box-sizing: border-box;
+}
+
+/* Remueve padding y margenes de la lista*/
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+/*Estilo de los elementos de la lista */
+ul li {
+  list-style-type: none;
+  cursor: pointer;
+  position: relative;
+  padding: 12px 8px 12px 40px;
+  background: #cbb1e7;
+  font-size: 18px;
+  transition: 0.2s;
+  
+  /* Hace los elementos de la lista no seleccionables */
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Coloca colores diferentes a la lista estilo zebra */
+ul li:nth-child(odd) {
+  background:#e5d8f3;
+}
+
+/* Fondo mas oscuro al pasar el mouse*/
+ul li:hover {
+  background: #fff;
+}
+
+
+ul li.checked {
+  background: #783cbd;
+  color: #fff;
+  text-decoration: line-through;
+}
+
+/* Agrega simbolo de check al selecciona elemento de la lista */
+ul li.checked::before {
+  content: '';
+  position: absolute;
+  border-color: #fff;
+  border-style: solid;
+  border-width: 0 2px 2px 0;
+  top: 10px;
+  left: 16px;
+  transform: rotate(45deg);
+  height: 15px;
+  width: 7px;
+}
+
+/* Estilo del boton de cerrado*/
+.close {
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 12px 16px 12px 16px
+}
+
+.close:hover {
+  background-color: #f44336;
+  color: white;
+}
+
+/*estilo del header */
+.header {
+  background-color: #783CBD;
+  padding: 30px 40px;
+  color: white;
+  text-align: center;
+}
+
+
+.header:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/*  input */
+input {
+  border: none;
+  width: 90%;
+  padding: 10px;
+  float: left;
+  font-size: 16px;
+}
+
+/* Estilo del boton agregar */
+.addBtn, .btn-pass-list, .btn-pass-pend, .btn-select-all-pend, .btn-select-all-list, .btn-ord-dw, .btn-ord-up {
+  padding: 10px;
+  width: 10%;
+  background-color: #B42371;
+  color: #FFF;
+  float: left;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+  font-weight:bolder;
+  
+}
+
+#menu-pend span:hover, #menu-list span:hover, .addBtn:hover{
+background-color:#dd559e;
+/*background-color:#fff;*/
+}
+
+
+.btn-pass-list, .btn-pass-pend, .btn-select-all-pend, .btn-select-all-list, .btn-ord-dw, .btn-ord-up {
+ border: 2px solid hsla(328, 67%, 30%, 1);}
+
+.btn-select-all-list.down,  .btn-select-all-pend.down{
+background-color: #3bc464;
+}
+
+span.down:hover {
+background-color:#298946!important;
+}
+
+.btn-logout{
+    color: #EDA900;
+	font-size: 1.5em;
+	/*font-weight:bolder;*/
+	font-weight: 700;
+    font-style: normal;
+}
+
+.btn-logout .glyphicon{
+    color: #fff;
+}
+
+.right{float:right;}
+
+.btn-pass-list, .btn-pass-pend, .btn-select-all-pend, .btn-select-all-list, .btn-ord-dw, .btn-ord-up {
+	width:100%;
+	/*margin-top:40px;*/
+}
+#menu-pend {
+	float:right;
+}
+#menu-list {
+	float:left;
+}
+
+.menu-listas, .menu-listas div{
+	padding:0px;
+}
+
+/*.addBtn:hover {
+  background-color: #bbb;
+}*/
+
+
+#myInput{color:#000;}
+
+	.yellow{color: #EDA900;}
+
+/*#cont-list-listo, #cont-list-todo{}*/
+
+	.list-1{background-color: #f2ecf9; overflow-y: scroll; min-height:50vh; height:50vh; margin-top:100px; }
+
+/*#cont-list-listo .list-1{ background-color: #d8f3e0;}
+#cont-list-todo .list-1{background-color: #fff1cc;}*/
+
+
+#box {
+    /*width: 224px;*/
+    margin-left: auto;
+	margin-right: auto;
+    text-align: left;
+    padding: 20px;
+    background-color: #783CBD;
+    color: #fff;
+    border: 1px solid #e5e5e5;
+    box-shadow: rgba(200,200,200,0.7) 0 4px 10px -1px;
+}
+
+button, html input[type="button"], input[type="reset"], input[type="submit"] {
+    -webkit-appearance: button;
+    cursor: pointer;
+}
+
+.button-primary {
+    background-color: #5fcf80 !important;
+    border-color: #3ac162 !important;
+}
+
+.nvc-ribbon {
+    width:100%;
+    border-radius: 0;
+    height: 10px;
+    margin: 0!important;
+}
+
+.nvc-ribbon, .progress {
+    overflow: hidden;
+    height: 21px;
+    margin-bottom: 21px;
+    background-color: #f5f5f5;
+    border-radius: 0;
+    box-shadow: inset 0 1px 2px rgba(0,0,0,.1);
+}
+
+.nvc-ribbon__section, .progress-bar {
+    float: left;
+    width: 0;
+    height: 100%;
+    font-size: 12px;
+    line-height: 21px;
+    color: #fff;
+    text-align: center;
+    background-color: #783CBD;
+    box-shadow: inset 0 -1px 0 rgba(0,0,0,.15);
+    -webkit-transition: width .6s ease;
+    transition: width .6s ease;
+}
+
+.nvc-ribbon__section--alpha {
+    background-color: #54274E;
+    width: 30%;
+}
+
+.nvc-ribbon__section--beta {
+    background-color: #B42371;
+    width: 50%;
+}
+.nvc-ribbon__section--gamma {
+    background-color: #E73D50;
+    width: 5%;
+}
+.nvc-ribbon__section--delta {
+    background-color: #F2AF00;
+    width: 15%;
+}
+
+#over-main{
+    display: table;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+@media screen and (max-width: 1000px) {
+  .list-1{ min-height:25vh; height:25vh;}
+  .button, .close{height:50px; font-size: 50px;}
+  .btn-logout {font-size: 35px;}
+   input, label, span,.form-control, .button{font-size:60px;}
+   ul li {font-size:50px!important;}
+   input, .form-control, .button{line-height:60px; height:40px;};  
+   ul li {padding: 12px 8px 12px 80px;}
+   ul li.checked::before {font-size:30px;}
+}
+}
+
+

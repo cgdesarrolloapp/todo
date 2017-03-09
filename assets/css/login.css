@@ -1,0 +1,140 @@
+body
+{
+font-family: "Helvetica",Arial,sans-serif;
+font-weight: 500;
+color:#333;
+background-color:#fbfbfb;
+
+}
+
+/*.system{display:none;}*/
+label
+{
+	width:100px;
+	display:block;
+	font-size:1.2em;
+	color:#fff;
+}
+#over-main{
+display: table;
+    position: absolute;
+    /*height: 100%;*/
+    height: 60%;
+    width: 100%;
+}
+
+#main
+{
+	margin:0 auto;
+	text-align:center;
+	float: none !important;
+    display: table-cell;
+    vertical-align: middle;
+}
+#box
+{
+float:none;
+margin-left:auto;
+margin-right:auto;
+text-align: left;
+padding: 20px;
+background-color: #783CBD;
+color: #fff;
+border: 1px solid #e5e5e5;
+box-shadow: rgba(200,200,200,0.7) 0 4px 10px -1px;
+}
+.input
+{
+	
+	padding:10px;
+	font-size:1.5em;
+	border:1px solid #999999;
+	width:200px;
+	margin-bottom:10px;
+	border: 1px solid #e5e5e5;
+background: #fbfbfb;
+box-shadow: inset 1px 1px 2px rgba(200,200,200,0.2);
+
+}
+.button {
+font-weight: bold;
+padding: 5px 15px;
+background: #6a1545;
+color: #fff !important;
+font-size: 1.8em;
+font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+cursor: pointer;
+text-decoration: none;
+text-shadow: 0 1px 0px rgba(0,0,0,0.15);
+border-width: 1px 1px 3px !important;
+border-style: solid;
+border-color: #326e99;
+white-space: nowrap;
+overflow: hidden;
+text-overflow: ellipsis;
+display: -moz-inline-stack;
+display: inline-block;
+vertical-align: middle;
+zoom: 1;
+-webkit-border-radius: 5px;
+-moz-border-radius: 5px;
+-ms-border-radius: 5px;
+-o-border-radius: 5px;
+border-radius: 5px;
+-webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+box-sizing: border-box;
+-webkit-box-shadow: 0 -1px 0 rgba(255,255,255,0.1) inset;
+-moz-box-shadow: 0 -1px 0 rgba(255,255,255,0.1) inset;
+box-shadow: 0 -1px 0 rgba(255,255,255,0.1) inset;
+}
+.button-primary {
+background-color: #aa2270 !important;
+border-color: #6a1545 !important;
+}
+.msg
+{
+	font-size:1.2em;
+	color:#666;
+	padding:10px;
+}
+.center {
+    
+     margin-left: auto;
+     margin-right: auto;
+}
+
+.text-left{
+	text-align:left!important;
+}
+
+.text-right{
+	text-align:right;
+}
+
+.form-group .glyphicon, #titulo-header{
+	color: #EDA900;
+}
+
+#titulo-header h2 {
+	line-height: 50px;
+}
+
+#home-title{
+	color:#aa2270;
+	font-weight: bolder;
+}
+
+@media (max-width: 1024px) {
+label, .input
+{
+	font-size:2em;}
+}
+
+@media (max-width: 1000px) {
+
+	.list-1{ min-height:25vh; height:25vh;}
+	.button{height:60px;}
+	input, label, span,.form-control, .button{font-size:40px;}
+	input, .form-control, .button{line-height:40px; height:60px;};
+}
